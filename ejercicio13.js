@@ -37,5 +37,5 @@ function removeItem(array, text) {
   else console.log(index);
 }
 
-removeItem(mainCharacters, "Ry");
+removeItem(mainCharacters, "R");
 console.log(mainCharacters);

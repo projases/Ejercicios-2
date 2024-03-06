@@ -38,3 +38,11 @@ const cucu = aliens.find((alien) => alien.name === "Cucushumushu");
 const porom = mutations.find((muta) => muta.name === "Porompompero");
 const fusion = { ...cucu, mutation: porom };
 console.log(fusion);
+
+const alien = {
+  ...aliens.find((alien) => alien.name === "Cucushumushu"),
+  mutation: {
+    ...mutations.find((mutation) => mutation.name === "Porompompero"),
+  },
+};
+console.log(alien);

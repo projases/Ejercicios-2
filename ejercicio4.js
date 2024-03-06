@@ -19,9 +19,9 @@ const users2 = [
   { id: 4, name: "Amanda" },
 ];
 // const userAnacleto = users2.map((item) => ({ ...item, name: item.name.charAt(0) === "A" ? "Anacleto" : item.name, }));
-const userAnacleto = users2.map((item) => {
-  item.name = item.name.charAt(0) === "A" ? "Anacleto" : item.name;
-  return item;
+const userAnacleto = users2.map((user) => {
+  user.name = user.name.charAt(0) === "A" ? "Anacleto" : user.name;
+  return user;
 });
 console.log(userAnacleto);
 // 4.3 Dado el siguiente array, devuelve una lista que contenga los valores
@@ -33,8 +33,8 @@ const cities = [
   { isVisited: true, name: "Amsterdam" },
   { isVisited: false, name: "Seul" },
 ];
-const visitedCities = cities.map((item) => {
-  item.name = item.isVisited ? item.name + " (Visitado)" : item.name;
-  return item;
+const visitedCities = cities.map((city) => {
+  city.name = city.isVisited ? city.name + " (Visitado)" : city.name;
+  return city.name;
 });
 console.log(visitedCities);

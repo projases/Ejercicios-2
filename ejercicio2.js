@@ -25,9 +25,10 @@ console.log(fruit1, fruit2, fruit3);
 const animalFunction = () => {
   return { name: "Bengal Tiger", race: "Tiger" };
 };
-const { var1, var2 } = { var1: animalFunction(), var2: animalFunction() };
-console.log(var1);
-console.log(var2);
+// const { var1, var2 } = { var1: animalFunction(), var2: animalFunction() };
+const { name: nameAnimal, race } = animalFunction();
+console.log(`${nameAnimal} ${race}`);
+// console.log(var2);
 
 // 2.4 En base al siguiente javascript, usa destructuring para crear las
 // variables name y itv con sus respectivos valores. Posteriormente crea
@@ -41,3 +42,5 @@ console.log(name, itv);
 
 const [año1, año2, año3] = itv;
 console.log(año1, año2, año3);
+
+console.log(`${name} ${itv} ${año1} ${año2} ${año3}`);

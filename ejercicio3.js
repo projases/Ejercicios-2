@@ -1,12 +1,14 @@
 //3.1 Dado el siguiente array, crea una copia usando spread operators.
 const pointsList = [32, 54, 21, 64, 75, 43];
 
-const [...copia] = pointsList;
+//const [...copia] = pointsList; //alternativa
+const copia = [...pointsList];
 
 console.log(copia);
 //3.2 Dado el siguiente objeto, crea una copia usando spread operators.
 const toy = { name: "Bus laiyiar", date: "20-30-1995", color: "multicolor" };
-const { ...copiaToy } = toy;
+// const { ...copiaToy } = toy;
+const copiaToy = { ...toy };
 console.log(copiaToy);
 // 3.3 Dado los siguientes arrays, crea un nuevo array juntandolos usando
 // spread operatos.

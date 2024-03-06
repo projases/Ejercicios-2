@@ -30,3 +30,6 @@ function findArrayIndex(array, text) {
   }
 }
 console.log(findArrayIndex(mainCharacters, "Obi-an"));
+
+function findArrayIndex2(array, text) 
+let index = array.indexOf(text)
